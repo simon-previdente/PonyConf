@@ -3,13 +3,13 @@ django<1.12
 django-autoslug
 django-bootstrap3
 django-bower
-django-registration-redux
-django-select2
-django-avatar
+#django-registration-redux
+#django-select2
+#django-avatar
 django-colorful
 
 markdown
 bleach
-chardet
+#chardet
 
--e git://github.com/Nim65s/django-YummyEmailOrUsernameInsensitiveAuth.git#egg=django-yeouia
+#-e git://github.com/Nim65s/django-YummyEmailOrUsernameInsensitiveAuth.git#egg=django-yeouia
