@@ -228,7 +228,7 @@ class Talk(PonyConfModel):
     description = models.TextField(blank=True, verbose_name=_('Description'))
     track = models.ForeignKey(Track, blank=True, null=True, verbose_name=_('Track'))
     notes = models.TextField(blank=True, verbose_name=_('Message to organizers'))
-    category = models.ForeignKey(TalkCategory, verbose_name=_('Intervention kind'))
+    category = models.ForeignKey(TalkCategory, blank=True, null=True, verbose_name=_('Intervention kind'))
     videotaped = models.BooleanField(_("I'm ok to be recorded on video"), default=True)
     video_licence = models.IntegerField(choices=enum_to_choices(LICENCES), default=2, verbose_name=_("Video licence"))
     sound = models.BooleanField(_("I need sound"), default=False)
